@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="account_type">com.jimaoka.gmail.android.searchsample.searchsampleforceapp</string>
+    
+    <string name="app_name">SearchSample</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_splash">Salesforce\nSearchSample</string>
+    <string name="title_activity_search_sample">Search Sample</string>
+    <string name="title_activity_describe_global">DescribeGlobalActivity</string>
+
+    <string name="api_version">v29.0</string>
+    <string name="msg_info_loading">読み取り中です&#8230;</string>
+</resources>
