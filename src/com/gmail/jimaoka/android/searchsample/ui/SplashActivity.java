@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.widget.Toast;
 
 import com.gmail.jimaoka.android.searchsample.R;
+import com.gmail.jimaoka.android.searchsample.constant.Const;
 import com.gmail.jimaoka.android.sfviewbuilder.vo.DescribeGlobalVo;
 import com.salesforce.androidsdk.rest.RestClient;
 import com.salesforce.androidsdk.rest.RestClient.AsyncRequestCallback;
@@ -18,8 +19,13 @@ import com.salesforce.androidsdk.rest.RestRequest;
 import com.salesforce.androidsdk.rest.RestResponse;
 import com.salesforce.androidsdk.ui.sfnative.SalesforceActivity;
 
+/**
+ * Splash Activity
+ * 
+ * @author junji imaoka
+ *
+ */
 public class SplashActivity extends SalesforceActivity {
-	public static final String ARG_DESCRIBE_GLOBAL_VOS = "arg_describe_global_vos";
 
 	private RestClient client;
 	private ArrayList<DescribeGlobalVo> describeVos;
@@ -44,6 +50,8 @@ public class SplashActivity extends SalesforceActivity {
 	
 	/**
 	 * DescribeGlobal を取得する RestRequest を送信します
+	 * @param
+	 * @return
 	 */
 	private void sendGetDescribeGlobalRequest() {
 		describeVos = new ArrayList<DescribeGlobalVo>();
@@ -61,7 +69,7 @@ public class SplashActivity extends SalesforceActivity {
 					}
 					
 					Intent intent = new Intent(SplashActivity.this, DescribeGlobalActivity.class);
-					intent.putExtra(ARG_DESCRIBE_GLOBAL_VOS, describeVos);
+					intent.putExtra(Const.ARG_DESCRIBE_GLOBAL_VOS, describeVos);
 					startActivity(intent);
 					finish();
 					
@@ -81,6 +89,7 @@ public class SplashActivity extends SalesforceActivity {
 	/**
 	 * メッセージを Toast で表示します
 	 * @param message
+	 * @return
 	 */
 	private void displayMessage(String message){
 		Toast.makeText(this, message, Toast.LENGTH_LONG).show();

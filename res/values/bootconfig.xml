@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-    <string name="remoteAccessConsumerKey">3MVG99OxTyEMCQ3gHJ.CdZng4sJ.JlM4EwD6Qpj.ND23DNzbedpboIudMPlVjE8.k1b3d80UcJfSODF4z79jM</string>
+    <string name="remoteAccessConsumerKey">3MVG99OxTyEMCQ3gHJ_XXXXXXXXXXXXXXXXXXXXXXXX</string>
     <string name="oauthRedirectURI">sfdc:///axm/detect/oauth/done</string>
     <string-array name="oauthScopes">
         <item>api</item>

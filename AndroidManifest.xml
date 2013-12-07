@@ -60,7 +60,8 @@
             android:name="com.salesforce.androidsdk.ui.ServerPickerActivity"
             android:excludeFromRecents="true"
             android:theme="@android:style/Theme.NoTitleBar" />
-        
+
+        <!-- Splash activity -->
         <activity
             android:name="com.gmail.jimaoka.android.searchsample.ui.SplashActivity"
             android:label="@string/app_name" >
@@ -70,10 +71,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+
+        <!-- DescribeGlobal activity -->
         <activity
             android:name="com.gmail.jimaoka.android.searchsample.ui.DescribeGlobalActivity"
             android:label="@string/title_activity_describe_global" >
+        </activity>
+        
+        <activity
+            android:name="com.gmail.jimaoka.android.sfviewbuilder.ui.SearchActivity"
+            android:label="@string/title_activity_search" >
         </activity>
     </application>
 
